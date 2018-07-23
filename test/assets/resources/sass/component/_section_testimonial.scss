@@ -1,0 +1,253 @@
+.section-testimonial {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 33, 33, 0.89);
+        opacity: 0.7;
+        @include transition;
+        z-index: 1;
+    }
+    .carousel {
+        position: relative;
+    }
+    .owl-controls {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 6px;
+        left: 0;
+        .owl-dots {
+            @include centered;
+            z-index: 30;
+
+            .owl-dot {
+                width: 6px;
+                height: 6px;
+                @include border-radius(50%);
+                background-color: rgba(#fff, 0.5);
+                display: inline-block;
+                margin: 0 10px;
+
+                &.active {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    &.section-testimonial-1 {
+        .carousel {
+            top: -50px;
+        }
+        .author {
+            .author-header, .author-content {
+                float: none;
+            }
+            .author-content {
+                width: auto;
+                margin-bottom: 50px;
+
+                .author-name {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 800;
+                    font-family: $rw;
+                    line-height: 1em;
+                    margin-bottom: 30px;
+                    margin-right: 10px;
+                }
+                p {
+                    color: #E1E1E1;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: $rw;
+                    font-style: normal;
+                    margin: 0;
+                }
+            }
+        }
+        .testimonial-content {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.section-testimonial-blue {
+        &:before {
+            background-color: rgba(#00BAD0, 0.7);
+        }
+    }
+}
+.section-testimonial-2 {
+    .section-testimonial-header {
+        margin-bottom: 60px;
+
+        .section-testimonial-icon {
+            margin-bottom: 40px;
+
+            span {
+                font-size: 40px;
+                color: #212121;
+            }
+        }
+        h3 {
+            color: #212121;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: $rw;
+            line-height: 40px;
+            letter-spacing: 0px;
+            margin-bottom: 10px;
+        }
+    }
+    .carousel {
+        .owl-controls {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .owl-nav {
+            position: absolute;
+            width: 100%;
+            height: 25px;
+            background: rgba(#000, 0);
+            z-index: 30;
+            top: 50%;
+            left: 0;
+            @include transform(translateY(-50%));
+
+            .owl-prev, .owl-next {
+                position: absolute;
+                top: 0;
+                width: 25px;
+                height: 100%;
+                background-color: #eee;
+                @include border-radius(50%);
+                z-index: 30;
+
+                span {
+                    display: inline-block;
+                    @include centered;
+                    color: #fff;
+                    z-index: 40;
+                    font-size: 18px;
+                    line-height: 1em;
+                    @include transition;
+                }
+                &:hover {
+                    span {
+                        color: $teal;
+                    }
+                }
+            }
+            .owl-prev {
+                left: 0;
+            }
+            .owl-next {
+                right: 0;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            height: 6px;
+            left: 50%;
+            bottom: -25px;
+            z-index: 30;
+            @include transform(translateX(-50%));
+
+            .owl-dot {
+                width: 6px;
+                height: 6px;
+                @include border-radius(50%);
+                background-color: #eee;
+                display: inline-block;
+                margin: 0 10px;
+
+                &.active {
+                    background-color: darken(#eee, 15%);
+                }
+            }
+        }
+    }
+    .brand-group {
+        img {
+            margin-top: 15px;
+        }
+    }
+    @media screen and (max-width:991px) {
+        .brand-group {
+            margin-top: 40px;
+        }
+    }
+}
+.section-testimonial-3 {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 33, 33, 0.8);
+        opacity: 0.7;
+        @include transition;
+        z-index: -1;
+    }
+    .section-testimonial-header {
+        margin-bottom: 60px;
+        position: relative;
+        h3 {
+           color: #fff;
+           font-size: 38px;
+           font-weight: 600;
+           font-family: $rw;
+           line-height: 30px;
+           letter-spacing: 0px;
+           margin-bottom: 15px;
+        }
+        p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: $lt;
+            line-height: 22px;
+            letter-spacing: 0px;
+            margin-bottom: 20px;
+        }
+    }
+    .carousel {
+        position: relative;
+        padding-bottom: 50px;
+    }
+    .owl-controls {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 6px;
+        left: 0;
+        .owl-dots {
+            @include centered;
+            z-index: 30;
+
+            .owl-dot {
+                width: 6px;
+                height: 6px;
+                @include border-radius(50%);
+                background-color: rgba(#fff, 0.5);
+                display: inline-block;
+                margin: 0 10px;
+
+                &.active {
+                    background-color: $teal;
+                }
+            }
+        }
+    }
+}

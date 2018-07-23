@@ -1,0 +1,109 @@
+.footer {
+    background-color: #222;
+    .copyright {
+        position: relative;
+        padding: 20px 0;
+        background-color: #000;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        line-height: 20px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-style: normal;
+        color: #aaaaaa;
+        font-size: 10px;
+        a {
+            color: $teal;
+        }
+        .back-to-top  {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            width: 60px;
+            height: 30px;
+            @include transform(translateX(-50%));
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                font-size: 20px;
+                color: #fff;
+                @include transform(translate(-45%, 10px));
+                @include transition(all 0.5s ease);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include triangle(60px 30px, #000, up);
+            }
+            &:hover {
+                cursor: pointer;
+                span {
+                    color: $teal;
+                    @include transform(translate(-45%, 5px));
+                }
+            }
+        }
+    }
+    &.footer-yellow {
+        .copyright {
+            a {
+                color: $yellow;
+            }
+        }
+        .back-to-top {
+            &:hover {
+                span {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+    &.footer-green {
+        .copyright {
+            a {
+                color: $green;
+            }
+        }
+        .back-to-top {
+            &:hover {
+                span {
+                    color: $green;
+                }
+            }
+        }
+    }
+    &.footer-2 {
+        background-color: #212121;
+        .social {
+            li {
+                margin: 0 20px;
+                a {
+                    color: #d1d1d1;
+                    font-size: 22px;
+                    &:hover {
+                        color: $teal;
+                    }
+                }
+            }
+        }
+        p {
+            background-color: transparent;
+            font-family: $lt;
+            text-transform: uppercase;
+            line-height: 20px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-style: normal;
+            color: #ffffff;
+            font-size: 12px;
+            &.copyright {
+                font-weight: 400;
+                color: #d1d1d1;
+                font-size: 10px;
+            }
+        }
+    }
+}

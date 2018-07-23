@@ -1,0 +1,74 @@
+.divider {
+    position: relative;
+    padding: 15px 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 20%;
+        height: 1px;
+        background-color: $gray;
+    }
+
+    &.divider-fullwidth {
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &.divider-dark {
+        &:before {
+            background-color: #262626;
+        }
+    }
+
+    &.divider-light {
+        &:before {
+            background-color: #eee;
+        }
+    }
+    &.divider-line-heading {
+        width: 200px;
+        margin: 0 auto;
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 55px;
+            height: 0px;
+            z-index: 10;
+            border-top: 1px dashed #e3e3e3;
+            background-color: transparent;
+        }
+        &:before {
+            left: 0px;
+        }
+        &:after {
+            right: 0px;
+        }
+        .line-middle {
+            margin: 0 auto;
+            width: 14px;
+            height: 14px;
+            background-color: #e3e3e3;
+            position: relative;
+            &:before, &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                @include transform(translateY(-50%));
+                width: 7px;
+                height: 7px;
+                z-index: 10;
+                background-color: #e3e3e3;
+            }
+            &:before {
+                left: -20px;
+            }
+            &:after {
+                right: -20px;
+            }
+        }
+    }
+}

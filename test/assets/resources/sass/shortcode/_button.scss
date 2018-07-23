@@ -1,0 +1,62 @@
+.btn {
+    @include border-radius(3px);
+    padding: 13px 30px;
+    line-height: 1em;
+    font-family: $lt;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-color: #d8d8d8;
+
+    &.btn-default {
+        background-color: #fff;
+        border-color: darken(#eee, 10%);
+
+        &:hover, &:focus {
+            background-color: #fff;
+            border-color: #000;
+        }
+    }
+    &.btn-primary {
+        background-color: #5890e5;
+
+        &:hover, &:focus {
+            background-color: darken(#5890e5, 10%);
+            border-color: #d8d8d8;
+        }
+    }
+    &.btn-success {
+        background-color: #50BC54;
+
+        &:hover, &:focus {
+            background-color: darken(#5FD663, 10%);
+            border-color: #d8d8d8;
+        }
+    }
+    &.btn-dark {
+        background-color: #212121;
+        color: #fff;
+    }
+    &.btn-transparent {
+        @include border-radius(0);
+        border-width: 2px;
+        color: #fff;
+        font-family: $rw;
+        font-size: 12px;
+        letter-spacing: 0.25em;
+        line-height: 20px;
+        padding: 10px 45px;
+        &:hover, &:focus {
+            color: #000;
+            background-color: #fff;
+            border-color: #fff;
+        }
+    }
+}
+.btn-teal {
+    background-color: $teal !important;
+    border-color: $teal !important;
+    color: #fff;
+    &:hover {
+        background-color: lighten($teal, 5%) !important;
+    }
+}

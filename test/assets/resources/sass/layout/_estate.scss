@@ -1,0 +1,105 @@
+.estate-info-box {
+    .info-box-type-5 {
+        .info-box-content {
+            p {
+                font-family: $lt;
+            }
+        }
+    }
+}
+.estate-counter {
+    .counter {
+        .counter-item {
+            .sppb-animated-icon {
+                color: $green !important;
+            }
+            &.counter-item-2 {
+                border-right-color: #f1f1f1;
+            }
+        }
+    }
+}
+.estate-info-box {
+    .info-box-content {
+        padding: 45px 30px;
+    }
+    .info-box-title {
+        color: #212121;
+        font-size: 23px;
+        font-weight: 600;
+        font-family: $rw;
+        line-height: 25px;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+    }
+    .info-box-desc {
+        color: rgb(170, 170, 170);
+        font-size: 14px;
+        font-weight: 700;
+        font-family: $rw;
+        line-height: 22px;
+        letter-spacing: 0;
+        margin-bottom: 15px;
+    }
+    p {
+        font-family: $lt;
+        font-size: 14px;
+        color: #797979;
+    }
+}
+.estate-step {
+    .icon-box-5-header {
+        h4 {
+            font-family: $rw;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 23px;
+        }
+        p {
+            font-size: $lt;
+            font-size: 14px;
+            color: #ddd;
+        }
+    }
+}
+.estate-service-subcribe {
+    background-color: $green;
+}
+.estate-contact {
+    .section-form-header {
+        h3 {
+            font-family: $rw;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 26px;
+        }
+        p {
+            font-family: $lt;
+            font-size: 14px;
+        }
+    }
+    .icon-box-type-7 {
+        .icon-box-header {
+            .icon-box-icon {
+                background-color: $green
+            }
+        }
+    }
+    .btn-submit-form-1 {
+        background-color: $green !important;
+        border-color: $green !important;
+        &:hover {
+            background-color: lighten($green, 10%) !important;
+            border-color: lighten($green, 10%) !important;
+        }
+    }
+}
+.estate-home-blog {
+    .section-header {
+        h4 {
+            text-transform: uppercase;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+}

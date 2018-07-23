@@ -1,0 +1,140 @@
+.testimonial {
+    .testimonial-header {
+        margin-bottom: 25px;
+    }
+    .author {
+        text-align: center;
+        margin: 0 auto;
+        .author-thumbnail {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            img {
+                @include border-radius(50%);
+            }
+        }
+        .author-content {
+            position: relative;
+            top: -25px;
+            padding-left: 20px;
+            display: inline-block;
+            text-align: left;
+            h3 {
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                font-weight: 700;
+                font-family: $rw;
+                line-height: 1em;
+                margin-bottom: 7px;
+            }
+            p {
+                color: #eaeaea;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: Raleway;
+
+            }
+        }
+    }
+    .testimonial-content {
+        p {
+            font-size: 24px;
+            font-family: $rw;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    &.testimonial-2 {
+        .author {
+            .author-thumbnail {
+                float: none;
+                img {
+                    border: 5px solid rgba(#fff, 0.7);
+                }
+            }
+            .author-content {
+                top: 10px;
+            }
+        }
+    }
+    &.testimonial-tiny {
+        .author {
+            .author-thumbnail {
+                width: 70px;
+                height: 70px;
+            }
+            .author-content {
+                top: -15px;
+                p {
+                    color: #a3a3a3;
+                    font-size: 13px;
+                    font-weight: 600;
+                    font-family: Roboto Slab;
+                    font-style: italic;
+                    margin: 0;
+                }
+            }
+            .author-name {
+                color: #212121;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $rw;
+                line-height: 2em;
+                margin: 0;
+            }
+        }
+        .testimonial-content {
+            padding: 0 15px;
+            p {
+                font-size: 14px;
+                font-family: $rs;
+                color: #797979;
+            }
+        }
+    }
+    &.testimonial-3 {
+        background-color: rgba(#171717, 0.6);
+        padding: 25px;
+        .testimonial-header {
+            margin-bottom: 0;
+            .author {
+                .author-thumbnail {
+                    width: 65px;
+                    height: 65px;
+                }
+                .author-content {
+                    .author-name {
+                        color: #ffffff;
+                        font-size: 17px;
+                        font-weight: 700;
+                        font-family: $rw;
+                        margin-bottom: 8px;
+                        margin-top: 10px;
+                    }
+                    p {
+                        color:  #c1c1c1;
+                        font-weight: 400;
+                        font-size: 13px;
+                        font-family: $lt;
+                        line-height: 1.1em;
+                    }
+                }
+            }
+        }
+        .testimonial-content {
+            p {
+                border-bottom: 3px solid rgba(#fff, 0.5);
+                color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+                font-family: $lt;
+                line-height: 28px;
+                margin-bottom: 18px;
+                padding-bottom: 13px;
+                padding-top: 0px;
+                text-align: left;
+            }
+        }
+    }
+}

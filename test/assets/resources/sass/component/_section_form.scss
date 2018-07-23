@@ -1,0 +1,101 @@
+.section-form {
+    background-color: #F5F5F5;
+
+    .section-form-header {
+        margin-bottom: 60px;
+        .section-form-header-icon {
+            width: 80px;
+            height: 80px;
+            @include border-radius(50%);
+            background-color: #fff;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+
+            i {
+                @include centered;
+                font-size: 40px;
+                color: #212121;
+            }
+        }
+        h3 {
+            color: #212121;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: $rw;
+            line-height: 40px;
+            letter-spacing: 0px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #797979;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $os;
+            line-height: 1.8em;
+            letter-spacing: 0px;
+            margin-bottom: 20px;
+        }
+    }
+    .section-form-content {
+        form {
+            margin-top: 20px;
+        }
+        .btn-submit-form-1 {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #212121;
+            border-color: #212121;
+            color: #fff;
+            @include border-radius(3px);
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $rw;
+            line-height: 13px;
+            padding: 17px 15px;
+            @include transition(all 0.3s ease);
+            &:hover {
+                background-color: $teal;
+                border-color: $teal;
+            }
+            &.blue {
+                padding: 14px 15px;
+                font-family: $lt;
+                font-size: 14px;
+                background-color: $blue !important;
+                &:hover {
+                    background-color: #000 !important;
+                }
+            }
+        }
+    }
+    &.section-form-reserve {
+        background-color: #fff;
+        .section-form-content {
+            .btn-submit-form-1 {
+                background-color: $teal;
+                border-color: $teal;
+                &:hover {
+                    background-color: #212121;
+                    border-color: #212121;
+                }
+            }
+        }
+    }
+    &.restaurant-form {
+        .section-form-content {
+            input, textarea, a {
+                font-family: $rs;
+                font-size: 14px;
+            }
+            .btn-submit-form-1 {
+                background-color: $yellow;
+                border-color: $yellow;
+                &:hover {
+                    background-color: #212121;
+                    border-color: #212121;
+                }
+            }
+        }
+    }
+}

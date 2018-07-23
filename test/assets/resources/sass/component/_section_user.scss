@@ -1,0 +1,71 @@
+.user-default {
+    .user-section-header {
+        margin-bottom: 50px;
+        .user-section-icon {
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            position: relative;
+            margin-bottom: 20px;
+            i {
+                font-size: 40px;
+                color: #212121;
+                display: inline-block;
+                @include centered;
+                z-index: 10;
+            }
+        }
+        .user-section-title {
+            color: #212121;
+            font-size: 30px;
+            font-family: $rw;
+            line-height: 1.25em;
+            letter-spacing: 0;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #797979;
+            font-size: 14px;
+            font-family: $os;
+            line-height: 1.8em;
+            letter-spacing: 0;
+            margin-bottom: 30px;
+        }
+    }
+    &.user-medical {
+        .user-section-header {
+            .user-section-title {
+                font-size: 38px;
+                font-weight: 600;
+                line-height: 0.75em;
+                margin-bottom: 15px;
+            }
+            p {
+                color: #797979;
+                font-size: 20px;
+                font-family: $lt;
+                line-height: 1.1em;
+                margin-bottom: 20px;
+                .hightlight {
+                    color: #2986e2;
+                }
+            }
+        }
+    }
+    &.user-apartment {
+        .user-section-header {
+            .user-section-title {
+               font-size: 23px;
+               font-weight: 600;
+               line-height: 1.05em;
+               margin-bottom: 10px;
+            }
+            p {
+                color: #797979;
+                font-family: $lt;
+                line-height: 1.8em;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

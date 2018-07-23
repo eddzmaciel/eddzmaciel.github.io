@@ -1,0 +1,27 @@
+.pd-0 {
+    padding: 0 !important;
+}
+
+@for $i from 0 through 20 {
+    .pt-#{$i * 5} {
+        padding-top: ($i * 5 + px) !important;
+    }
+}
+
+@for $i from 0 through 20 {
+    .pr-#{$i * 5} {
+        padding-right: ($i * 5 + px) !important;
+    }
+}
+
+@for $i from 0 through 20 {
+    .pb-#{$i * 5} {
+        padding-bottom: ($i * 5 + px) !important;
+    }
+}
+
+@for $i from 0 through 20 {
+    .pl-#{$i * 5} {
+        padding-left: ($i * 5 + px) !important;
+    }
+}
